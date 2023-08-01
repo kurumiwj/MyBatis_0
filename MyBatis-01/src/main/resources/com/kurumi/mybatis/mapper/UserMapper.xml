@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kurumi.mybatis.mapper.UserMapper">
+	<insert id="addUser">
+		insert into t_user values(null,"saber","123456",19,"女","saber@126.com")
+	</insert>
+	<update id="updateUser">
+		update t_user set username="satoru" where id=5
+	</update>
+	<delete id="deleteUser">
+		delete from t_user where id=5
+	</delete>
+	<select id="getUserById" resultType="com.kurumi.mybatis.entity.User">
+		select * from t_user where id=3
+	</select>
+	<select id="getAllUser" resultType="User">
+		select * from t_user
+	</select>
+</mapper>

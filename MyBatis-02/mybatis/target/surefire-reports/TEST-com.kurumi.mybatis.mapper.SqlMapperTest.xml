@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="com.kurumi.mybatis.mapper.SqlMapperTest" time="0.608" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\bin"/>
+    <property name="java.vm.version" value="25.291-b10"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\Study\MyBatis\0\MyBatis-02\mybatis"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="test" value="com.kurumi.mybatis.mapper.SqlMapperTest#testAddUser"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\Study\MyBatis\0\MyBatis-02\mybatis"/>
+    <property name="java.runtime.version" value="1.8.0_291-b10"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_291\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\zhuwe\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="D:\Netbeans\NetBeans-15\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="D:\Maven\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_291\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\zhuwe\AppData\Local\ActiveState\StateTool\release\bin;C:\Program Files\Lapce\;D:\Komodo\;D:\Ruby\Ruby31-x64\bin;C:\Program Files\VanDyke Software\Clients\;C:\Program Files\Java\jdk1.8.0_291\bin;C:\Program Files\Java\jdk1.8.0_291\jre\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Microsoft MPI\Bin\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;D:\Redis\;C:\Program Files\Microsoft VS Code\bin;D:\Mingw64\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\mingw64;D:\Mingw\bin;D:\Mingw64\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\mingw64\bin;D:\LLVM\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;D:\Anaconda;D:\Anaconda\Scripts;D:\Anaconda\Lib\site-packages;D:\Anaconda\Library\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\gradle\gradle-7.1-all\gradle-7.1\bin;D:\Maven\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin;C:\Program Files\PuTTY\;D:\matlab\runtime\win64;D:\matlab\bin;D:\matlab\polyspace\bin;D:\openCV\opencv\build\x64\vc15\bin;D:\openCV\opencv\build\x64\vc14\bin;D:\Latex\texlive\2021\bin\win32;D:\UE\UltraEdit;D:\Git\Git\cmd;D:\node.js\;D:\WechatDevTools\微信web开发者工具\dll;C:\Users\zhuwe\.atom\.apm;D:\nginx\nginx-1.22.0\nginx-1.22.0;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Tomcat\apache-tomcat-8.5.85-windows-x64\bin;D:\XManager\Xmanager 7\;D:\XManager\Xshell 7\;D:\XManager\Xftp 7\;D:\XManager\Xlpd 7\;C:\Users\zhuwe\.cargo\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\zhuwe\AppData\Local\Microsoft\WindowsApps;D:\VScode\Microsoft VS Code\bin;C:\Users\zhuwe\AppData\Local\atom\bin;D:\fiddler;D:\Wind\bin\;D:\Windin\bin\;D:\webstorms\WebStorm 2019.2.4\bin;D:\DataGrip\DataGrip 2019.2.6\bin;D:\Intellij\IntelliJ IDEA 2019.2.4\bin;D:\adb;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\ProgramData\Anaconda3;D:\Goland\GoLand 2019.2.5\bin;C:\Users\zhuwe\AppData\Local\GitHubDesktop\bin;D:\Brackets\;C:\Users\zhuwe\AppData\Roaming\npm;C:\Users\zhuwe\.dotnet\tools;C:\Users\zhuwe\AppData\Local\JetBrains\Toolbox\scripts;;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;."/>
+    <property name="maven.conf" value="D:\Maven\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="D:\Maven\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\zhuwe"/>
+    <property name="user.timezone" value="GMT+08:00"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="zhuwe"/>
+    <property name="java.class.path" value="D:\Maven\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_291\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=com.kurumi.mybatis.mapper.SqlMapperTest#testAddUser -Dmaven.ext.class.path=D:\Netbeans\NetBeans-15\netbeans\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 surefire:test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_291"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_291\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_291\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\Maven\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.kurumi.mybatis.mapper.SqlMapperTest" name="testAddUser" time="0.608"/>
+</testsuite>

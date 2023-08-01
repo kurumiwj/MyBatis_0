@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kurumi.mybatis.mapper.EmpMapper">
+	<resultMap id="empResultMap" type="Emp">
+		<id property="eid" column="eid"></id>
+		<result property="empName" column="emp_name"></result>
+		<result property="age" column="age"></result>
+		<result property="sex" column="sex"></result>
+		<result property="email" column="email"></result>
+		<result property="did" column="did"></result>
+	</resultMap>
+<!-- 	级联方式处理映射关系 -->
+	<resultMap id="empAndDeptResultMap1" type="Emp">
+		<id property="eid" column="eid"></id>
+		<result property="empName" column="emp_name"></result>
+		<result property="age" column="age"></result>
+		<result property="sex" column="sex"></result>
+		<result property="email" column="email"></result>
+		<result property="dept.did" column="did"></result>
+		<result property="dept.deptName" column="dept_name"></result>
+	</resultMap>
+<!-- 	association处理映射关系 -->
+	<resultMap id="empAndDeptResultMap2" type="Emp">
+		<id property="eid" column="eid"></id>
+		<result property="empName" column="emp_name"></result>
+		<result property="age" column="age"></result>
+		<result property="sex" column="sex"></result>
+		<result property="email" column="email"></result>
+		<association property="dept" javaType="Dept">
+			<id property="did" column="did"></id>
+			<result property="deptName" column="dept_name"></result>
+		</association>
+	</resultMap>
+<!-- 	分步查询 -->
+	<resultMap id="empAndDeptResultMap3" type="Emp">
+		<id property="eid" column="eid"></id>
+		<result property="empName" column="emp_name"></result>
+		<result property="age" column="age"></result>
+		<result property="sex" column="sex"></result>
+		<result property="email" column="email"></result>
+		<association property="dept" select="com.kurumi.mybatis.mapper.DeptMapper.getEmpAndDept1" column="did"></association>
+	</resultMap>
+<!-- 	<select id="getAllEmp" resultType="Emp"> -->
+<!-- 		select eid,emp_name empName,age,sex,email,did from t_emp -->
+<!-- 		select * from t_emp -->
+<!-- 	</select> -->
+	<select id="getAllEmp" resultMap="empResultMap">
+		select * from t_emp
+	</select>
+	<select id="getEmpAndDept" resultMap="empAndDeptResultMap2">
+		select * from t_emp e left join t_dept d on e.did=d.did where e.eid=#{eid}
+	</select>
+	<select id="getEmpAndDept1" resultMap="empAndDeptResultMap3">
+		select * from t_emp where eid=#{eid}
+	</select>
+	<select id="getDeptAndEmp1" resultType="Emp">
+		select * from t_emp where did=#{did}
+	</select>
+</mapper>
